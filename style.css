@@ -1,0 +1,208 @@
+body {
+  background: radial-gradient(circle at top left, #0a0a0a, #000);
+  color: white;
+  overflow-x: hidden;
+  font-family: 'Inter', sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* HERO */
+.hero {
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 40px;
+}
+.navbar {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 12px 25px;
+  border-radius: 50px;
+
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.1);
+
+  z-index: 1000;
+}
+
+.nav-left a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+
+.nav-right a {
+  margin-left: 15px;
+  font-size: 18px;
+  color: white;
+  transition: 0.3s ease;
+}
+
+/* hover effect */
+.nav-right a:hover {
+  transform: translateY(-3px);
+  opacity: 0.7;
+}
+
+.hero-title {
+  font-size: 64px;
+  letter-spacing: -0.05em;
+  margin-bottom: 10px;
+}
+
+.hero-sub {
+  font-size: 18px;
+  opacity: 0.6;
+  margin-bottom: 20px;
+}
+
+/* ABOUT (NEW PREMIUM STYLE) */
+#about div {
+  max-width: 800px;
+  margin: auto;
+  padding: 30px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.04);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.1);
+  line-height: 1.7;
+  text-align: left;
+}
+
+/* PROJECTS CLEANER */
+.card {
+  padding: 25px;
+  border-radius: 18px;
+  background: rgba(255,255,255,0.04);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.08);
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  border: 1px solid rgba(255,255,255,0.25);
+}
+
+/* SECTION SPACING (IMPORTANT FOR CLINTON STYLE) */
+.section {
+  padding: 80px 12%;
+  text-align: center;
+}
+h2 {
+  font-size: 28px;
+  margin-bottom: 40px;
+  letter-spacing: -0.03em;
+  opacity: 0.9;
+}
+#projects {
+  margin-top: -250px;
+}
+.footer {
+  margin-top: 80px;
+  padding: 60px 10%;
+  text-align: center;
+
+  background: rgba(255,255,255,0.03);
+  backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+.footer-container h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  letter-spacing: -0.03em;
+}
+
+.footer-container p {
+  opacity: 0.6;
+  margin-bottom: 20px;
+}
+
+.footer-links {
+  margin-bottom: 30px;
+}
+
+.footer-links a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: white;
+  position: relative;
+}
+
+/* subtle hover effect */
+.footer-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0%;
+  height: 1px;
+  background: white;
+  transition: 0.3s;
+}
+
+.footer-links a:hover::after {
+  width: 100%;
+}
+
+.footer-bottom {
+  font-size: 13px;
+  opacity: 0.4;
+}
+.footer-links a {
+  margin: 0 15px;
+  font-size: 20px;
+  color: white;
+  transition: 0.3s ease;
+}
+
+/* hover effect */
+.footer-links a:hover {
+  transform: translateY(-3px);
+  opacity: 0.7;
+}
+.skills-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.skills-list li {
+  display: inline-block;
+  margin: 5px 10px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+.navbar { position: fixed; 
+  top: 20px;
+   left: 50%; 
+   transform: translateX(-50%);
+    display: flex;
+     gap: 30px; padding: 20px 30px;
+      border-radius: 50px; background: rgba(255, 255, 255, 0.05);
+       backdrop-filter: blur(10px);
+        border: 1px solid rgba(255,255,255,0.1);
+        z-index: 1000; 
+      } 
+      .navbar a 
+      {
+         text-decoration: none;
+         color: white; font-size: 14px;
+         }
+         
