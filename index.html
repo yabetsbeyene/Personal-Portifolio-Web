@@ -3,187 +3,204 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Yabets Portfolio</title>
+  <title>Yabets Beyene | Portfolio</title>
   <link rel="stylesheet" href="style.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
-<!-- NAVBAR -->
-<nav class="navbar">
-  <div class="nav-left">
-    <a href="#hero">Home</a>
-    <a href="#projects">Projects</a>
-    <a href="#about">About Me</a>
-    <a href="#contact">Contact</a>
-  </div>
+<!-- PARTICLE CANVAS -->
+<canvas id="particles"></canvas>
 
-  <div class="nav-right">
-     <a href="https://t.me/yabetsb" target="_blank">
-    <i class="fab fa-telegram"></i>
-  </a>
-    <a href="https://linkedin.com" target="_blank">
-      <i class="fab fa-linkedin"></i>
-    </a>
-    <a href="https://github.com/yabetsbeyene" target="_blank">
-      <i class="fab fa-github"></i>
-    </a>
-    <a href="mailto:yabetsbeyene78@gmail.com">
-      <i class="fas fa-envelope"></i>
-    </a>
+<!-- CURSOR GLOW -->
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="nav-logo">YB</div>
+  <div class="nav-links">
+    <a href="#hero" class="nav-link">Home</a>
+    <a href="#projects" class="nav-link">Projects</a>
+    <a href="#about" class="nav-link">About</a>
+    <a href="#contact" class="nav-link">Contact</a>
   </div>
+  <div class="nav-icons">
+    <a href="https://t.me/yabetsb" target="_blank" title="Telegram"><i class="fab fa-telegram"></i></a>
+    <a href="https://linkedin.com" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+    <a href="https://github.com/yabetsbeyene" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+    <a href="mailto:yabetsbeyene78@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+  </div>
+  <button class="hamburger" id="hamburger"><i class="fas fa-bars"></i></button>
 </nav>
 
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#hero" class="mobile-link">Home</a>
+  <a href="#projects" class="mobile-link">Projects</a>
+  <a href="#about" class="mobile-link">About</a>
+  <a href="#contact" class="mobile-link">Contact</a>
+</div>
+
 <!-- HERO -->
-<section id="hero" class="hero section">
-   <img src="mypic.JPG" alt="Yabets" class="profile-img">
-
-
-  <h1 class="hero-title fade-in">Hi, I'm Yabets</h1>
-
-  <p class="hero-sub fade-in delay">
-    Information Systems Student & Frontend Developer
-  </p>
-
-  <p class="center-text fade-in delay">
-    I am a <span id="typing"></span>
-  </p>
-
+<section id="hero" class="hero">
+  <div class="hero-content">
+    <div class="profile-wrapper">
+      <div class="profile-ring"></div>
+      <img src="mypic.JPG" alt="Yabets" class="profile-img">
+    </div>
+    <div class="badge">Available for opportunities</div>
+    <h1 class="hero-title">Hi, I'm <span class="gradient-text">Yabets</span></h1>
+    <p class="hero-sub">Information Systems Student &amp; Frontend Developer</p>
+    <p class="typing-line">I am a <span id="typing" class="typing-text"></span><span class="cursor-blink">|</span></p>
+    <div class="hero-btns">
+      <a href="#projects" class="btn-primary">View My Work</a>
+      <a href="#contact" class="btn-outline">Get In Touch</a>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-dot"></div>
+    </div>
+  </div>
 </section>
-<!-- PROJECTS -->
-<section id="projects" class="section hidden">
-  <h2>Selected Projects</h2>
 
+<!-- PROJECTS -->
+<section id="projects" class="section reveal">
+  <div class="section-header">
+    <span class="section-tag">Portfolio</span>
+    <h2>Selected <span class="gradient-text">Projects</span></h2>
+    <p class="section-desc">A collection of things I've built and shipped</p>
+  </div>
   <div class="grid">
 
-    <div class="card">
-       
-      <h3>Digital-Donation-Or-Charity-platform-UI</h3>
-      <p>This is my biggest personal project so far in which tried to build a front-end(UI) of a 
-        digital donation platform in which any one can donate any thing as a 
-        charity and at the same time any one can get materials needed.</p><br>
-       <a href="https://helpethiopia.netlify.app/" target="_blank">Browse Project</a>
+    <div class="card" data-delay="0">
+      <div class="card-icon"><i class="fas fa-heart"></i></div>
+      <h3>Digital Donation Platform</h3>
+      <p>A full frontend UI for a digital charity platform where anyone can donate or receive materials. My biggest personal project to date.</p>
+      <div class="card-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+      <a href="https://helpethiopia.netlify.app/" target="_blank" class="card-link">Browse Project <i class="fas fa-arrow-right"></i></a>
     </div>
 
-    <div class="card">
+    <div class="card" data-delay="100">
+      <div class="card-icon"><i class="fas fa-home"></i></div>
       <h3>Airbnb System Frontend</h3>
-      <p> A clean and responsive frontend replica of the Airbnb website.
-        Modern UI: Built with a focus on clean components and smooth navigation.
-        Built With HTML5 CSS3 & JavaScript.</p>
-      <a href="https://bnbsysystem.netlify.app/" target="_blank">Browse Project</a>
-    </div>
-     <div class="card">
-      <h3>Clinic Management System Frontend</h3>
-      <p>A responsive, user-friendly frontend interface for a Clinic Management System. Designed for patient scheduling
-         and medical record visualization using HTML5, CSS3, and JavaScript.</p>
-      <a href="https://clinicui.netlify.app/" target="_blank">Browse Project</a>
+      <p>A clean and responsive frontend replica of Airbnb. Modern UI with smooth navigation and polished components.</p>
+      <div class="card-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+      <a href="https://bnbsysystem.netlify.app/" target="_blank" class="card-link">Browse Project <i class="fas fa-arrow-right"></i></a>
     </div>
 
-      <div class="card">
+    <div class="card" data-delay="200">
+      <div class="card-icon"><i class="fas fa-stethoscope"></i></div>
+      <h3>Clinic Management System</h3>
+      <p>A responsive frontend for a Clinic Management System covering patient scheduling and medical record visualization.</p>
+      <div class="card-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+      <a href="https://clinicui.netlify.app/" target="_blank" class="card-link">Browse Project <i class="fas fa-arrow-right"></i></a>
+    </div>
+
+    <div class="card" data-delay="300">
+      <div class="card-icon"><i class="fas fa-book"></i></div>
       <h3>Library Management System</h3>
-      <p>Libraries play a crucial role in academic institutions.
-        However, managing library operations manually can be inefficient, time-consuming,
-        and prone to errors.To solve these challenges,
-        Tried to develop a Library Management System using Binary Search Trees (BSTs) for efficient data storage and retrieval.</p>
-      <a href="https://github.com/yabetsbeyene/Library-Management-System-in-DSA" target="_blank">View More about This Project On GitHub</a>
+      <p>A data-structure-powered library system using Binary Search Trees for efficient book storage and retrieval.</p>
+      <div class="card-tags"><span>DSA</span><span>BST</span><span>C++</span></div>
+      <a href="https://github.com/yabetsbeyene/Library-Management-System-in-DSA" target="_blank" class="card-link">View on GitHub <i class="fas fa-arrow-right"></i></a>
     </div>
 
-    <div class="card">
+    <div class="card" data-delay="400">
+      <div class="card-icon"><i class="fas fa-cloud-sun"></i></div>
       <h3>Simple Weather App</h3>
-      <p>This is a simple weather app in which you can check the weather Condition, 
-Day And Time of Any part and any country in the World just by searching its name,build it when I was learning JavaScript FreeCodecamp.</p>
-      <a href="https://checkingcondition.netlify.app/" target="_blank">Browse Project</a>
+      <p>Check weather conditions, day and time for any country in the world. Built while learning JavaScript on FreeCodeCamp.</p>
+      <div class="card-tags"><span>JavaScript</span><span>API</span></div>
+      <a href="https://checkingcondition.netlify.app/" target="_blank" class="card-link">Browse Project <i class="fas fa-arrow-right"></i></a>
     </div>
 
-   
+
+
   </div>
 </section>
-<section id="about" class="section hidden">
 
-  <h2>About Me</h2>
-
-  <div>
-    <p>
-      I'm Yabets Beyene, a 3rd Year Information Systems student specializing in Cybersecurity and Software Development.
-      I build real-world systems and continuously improve my problem-solving skills through practical projects.
-    </p>
-    <p>As a tech Student and enthusiast, my journey is driven by a desire to become the best version of myself and achieve meaningful impact through technology. 
-      Currently pursuing my education while actively building real-world projects, I focus on Learning and Practicing the way of building intelligent systems and
-       By giving solutions for Real World Problems By using modern technologies While Learning.</p>
-    <p>
-      I focus on clean code, scalable applications, and user-centered design. My goal is to become a skilled software
-      engineer and cybersecurity professional.
-    </p>
-
+<!-- ABOUT -->
+<section id="about" class="section reveal">
+  <div class="section-header">
+    <span class="section-tag">Who I Am</span>
+    <h2>About <span class="gradient-text">Me</span></h2>
   </div>
 
-</div>
+  <div class="about-grid">
+    <div class="about-text">
+      <p>I'm <strong>Yabets Beyene</strong>, a 3rd Year Information Systems student specializing in Cybersecurity and Software Development at Hawassa University.</p>
+      <p>My journey is driven by a desire to build intelligent systems and solve real-world problems using modern technologies. I focus on clean code, scalable applications, and user-centered design.</p>
+      <p>My goal is to become a skilled software engineer and cybersecurity professional — one project at a time.</p>
+      <div class="about-stats">
+        <div class="stat"><span class="stat-num">15+</span><span class="stat-label">Projects</span></div>
+        <div class="stat"><span class="stat-num">3rd</span><span class="stat-label">Year Student</span></div>
+        <div class="stat"><span class="stat-num">6+</span><span class="stat-label">Certifications</span></div>
+      </div>
+    </div>
 
-  <h3>Skills</h3>
-  <div>
-  <p>FrontEnd Web Development</p><br>
-  By Using:
-  <ul class="skills-list">
-  <li>HTML</li>
-  <li>CSS</li>
-  <li>JavaScript</li>
-</ul><br>
-</div>
-<div><p>Data Structure and Algorithms</p><p>Networking</p></div>
+    <div class="skills-panel">
+      <h3>Skills &amp; Technologies</h3>
+      <div class="skill-bars">
+        <div class="skill-item">
+          <div class="skill-label"><span>HTML &amp; CSS</span><span>90%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-label"><span>JavaScript</span><span>75%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+        </div>
+         
+        <div class="skill-item">
+          <div class="skill-label"><span>Java / C++</span><span>75%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="60"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-label"><span>Networking &amp; Security</span><span>85%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="55"></div></div>
+        </div>
+      </div>
 
-
-<div>
-  <P>Programming Languages :</P>
-  <ul class="skills-list">
-  <li>Phyton</li>
-  <li>Java</li>
-  <li>Php</li><br>
-   <li>HTML</li>
-  <li>CSS</li>
-  <li>JavaScript</li><br>
-  <li>C#</li>
-  <li>C++</li>
-</ul><br>
-</div>
-  <div><p>Education and certeficates</p>
- <ul class="skills-list">
-  <li>Hawassa University Information System Student</li><br>
-  <li>FreeCode Camp JavaScript Certefication</li><br>
-  <li>FreeCode Camp Legacy Responsive Web Design V8 Certefication</li>
- </ul>
-  
-</div>
-  
-
-
+      <h3 style="margin-top:30px;">Certifications</h3>
+      <div class="cert-list">
+        <div class="cert-item"><i class="fas fa-university"></i> Hawassa University - Information Systems Student</div>
+        <div class="cert-item"><i class="fas fa-certificate"></i> FreeCodeCamp - JavaScript Certification</div>
+        <div class="cert-item"><i class="fas fa-certificate"></i> FreeCodeCamp - Responsive Web Design V8</div>
+        <div class="cert-item"><i class="fas fa-award"></i> CS50 - Introduction to Computer Science (Harvard)</div>
+        <div class="cert-item"><i class="fas fa-laptop-code"></i> Udacity - Certefications</div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <!-- CONTACT -->
-<footer id="contact" class="footer">
-
-  <div class="footer-container">
-
-    <h2>Let’s Connect</h2>
-    <p>Feel free to reach out or follow me on my platforms.</p>
-
-    <div class="footer-links">
-      <a href ="https://t.me/yabetsb" target="_blank">Telegram</a>
-      <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-      <a href="https://github.com/yabetsbeyene" target="_blank">GitHub</a>
-      <a href="mailto:yabetsbeyene78@gmail.com">Email</a>
-
-    </div>
-
-    <div class="footer-bottom">
-      <p>© 2026 Yabets Beyene. All rights reserved.</p>
-    </div>
-
+<section id="contact" class="section reveal">
+  <div class="section-header">
+    <span class="section-tag">Say Hello</span>
+    <h2>Let's <span class="gradient-text">Connect</span></h2>
+    <p class="section-desc">Feel free to reach out - I'm always open to new opportunities.</p>
   </div>
+  <div class="contact-links">
+    <a href="https://t.me/yabetsb" target="_blank" class="contact-card">
+      <i class="fab fa-telegram"></i>
+      <span>Telegram</span>
+    </a>
+    <a href="https://linkedin.com" target="_blank" class="contact-card">
+      <i class="fab fa-linkedin"></i>
+      <span>LinkedIn</span>
+    </a>
+    <a href="https://github.com/yabetsbeyene" target="_blank" class="contact-card">
+      <i class="fab fa-github"></i>
+      <span>GitHub</span>
+    </a>
+    <a href="mailto:yabetsbeyene78@gmail.com" class="contact-card">
+      <i class="fas fa-envelope"></i>
+      <span>Email</span>
+    </a>
+  </div>
+</section>
 
+<footer class="footer">
+  <p>&#169; 2026 Yabets Beyene. Crafted with <span style="color:#a78bfa">&#9829;</span></p>
 </footer>
 
 <script src="script.js"></script>
-
 </body>
 </html>
