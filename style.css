@@ -287,3 +287,66 @@ h2 {
   }
 
 }
+/* ========================= */
+/* 📱 MOBILE POLISH (REFINED) */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+  /* HERO TEXT */
+  .hero-title {
+    font-size: 34px;
+    letter-spacing: -0.03em;
+  }
+
+  .hero-sub {
+    font-size: 15px;
+  }
+
+  .center-text {
+    font-size: 15px;
+  }
+
+  /* SECTION TITLES */
+  h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  /* PROJECT CARDS */
+  .card {
+    padding: 16px;
+  }
+
+  .card h3 {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+
+  .card p {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  .card a {
+    font-size: 13px;
+  }
+
+  /* ABOUT SECTION TEXT */
+  #about p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  /* SKILLS LIST */
+  .skills-list li {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+
+  /* GENERAL SPACING */
+  .section {
+    padding: 40px 20px;
+  }
+
+}
