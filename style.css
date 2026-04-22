@@ -386,8 +386,21 @@ h2 {
   transition: 0.3s ease;
 }
 
-/* subtle hover effect */
+ 
 .profile-img:hover {
   transform: scale(1.05);
   border-color: rgba(255,255,255,0.4);
+}
+ 
+#about h3 {
+  margin-top: 80px;  
+
+ 
+#about .skills-list {
+  margin-top: 20px;
+}
+@media (max-width: 768px) {
+  #about h3 {
+    margin-top: 50px;
+  }
 }
