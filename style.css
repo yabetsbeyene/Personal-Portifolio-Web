@@ -96,8 +96,15 @@ html {
   transform: translateY(-8px);
   border: 1px solid rgba(255,255,255,0.25);
 }
+.section {
+  padding: 80px 12%;
+}
 
-/* SECTION SPACING (IMPORTANT FOR CLINTON STYLE) */
+ #projects,
+#about {
+  margin-bottom: 40px;
+}
+
 .section {
   padding: 80px 12%;
   text-align: center;
@@ -349,4 +356,14 @@ h2 {
     padding: 40px 20px;
   }
 
+}
+@media (max-width: 768px) {
+  .section {
+    padding: 60px 20px;
+  }
+
+  #projects,
+  #about {
+    margin-bottom: 20px;
+  }
 }
