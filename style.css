@@ -206,10 +206,7 @@ h2 {
          color: white; font-size: 14px;
          }
          
-         /* ========================= */
-/* 📱 MOBILE RESPONSIVENESS */
-/* ========================= */
-
+  
 @media (max-width: 768px) {
 
   /* NAVBAR */
